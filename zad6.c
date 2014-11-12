@@ -6,8 +6,8 @@ int pali(char* wyraz)
 int d;
 char odwrocony[20];
 
-strcpy (odwrocony, wyraz);
-strrev (odwrocony);
+strcopy(odwrocony, wyraz);
+strrev(odwrocony);
 d=strrev (odwrocony);
 
     if ( d == 0)
