@@ -20,7 +20,6 @@ d=dlugosc(string);
 while(d!=0){
 d--;
   printf("%c",string[d]);
-  if(string[d]==)
 }
 printf("\n");
   return 0;
