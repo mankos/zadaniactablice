@@ -1,26 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int pali(char* wyraz)
+ 
+int palindrom(char* wyraz)
 {
-int d;
-char odwrocony[20];
-
-strcopy (odwrocony, wyraz);
-strrev (odwrocony);
-
-    if ( d == 0)
+    char odwrocony[255];
+ 
+    //kopiujemy wyraz do zmiennej pomocniczej
+    strcpy (odwrocony, wyraz);
+ 
+    //odwracamy wyraz
+    strrev (odwrocony);
+ 
+    //jezeli wyrazy sie zgadzaja zwroc 1
+    if ( strcmp(wyraz, odwrocony) == 0)
         return 1;
-
+ 
     return 0;
 }
-
+ 
 int main()
 {
-  char wyraz[20];
-printf ("Podaj string\n");
-scanf ("%s", wyraz);
-printf ("%d\n", pali(wyraz));
-system("PAUSE");
+    char wyraz[255];
+ 
+    printf ("Podaj wyraz do sprawdzenia:\n");
+    scanf ("%s", wyraz);
+ 
+    printf ("%d\n", palindrom(wyraz));
+ 
+    system("PAUSE");
     return 0;
 }
