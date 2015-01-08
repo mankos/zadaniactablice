@@ -14,6 +14,6 @@ return znaki;
 int main(){
 printf("podaj znaki\n");
 scanf("%s",string);
-printf("dlugosc tego stringu to %d \n",dlugosc(string));
+printf("dlugosc ciagu to %d \n",dlugosc(string));
   return 0;
 }
